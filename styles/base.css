@@ -1,10 +1,7 @@
-/* ===========================
-   Paleta de cores e fontes
+/* =========================
+   Color palette and fonts
    =========================== */
 :root {
-  --bg: #f0f4f8;
-  --text: #1a1a1a;
-  --muted: #555;
   --primary: #005f99;
   --primary-hover: #004070;
   --card-bg: #ffffff;
@@ -15,13 +12,15 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: var(--bg);
-  color: var(--text);
+  background-color: #f0f4f8;
+  /* replaced var(--bg) */
+  color: #1a1a1a;
+  /* replaced var(--text) */
   line-height: 1.6;
 }
 
-/* ===========================
-   Cabeçalho
+/* ========
+   Header
    =========================== */
 header {
   background-color: var(--primary);
@@ -37,8 +36,8 @@ header {
   margin-bottom: 0.5rem;
 }
 
-/* ===========================
-   Navegação
+/* =============
+   Navigation
    =========================== */
 nav ul {
   list-style: none;
@@ -63,7 +62,7 @@ nav a:hover {
 }
 
 /* ===========================
-   Conteúdo principal
+   Main content
    =========================== */
 main {
   max-width: var(--maxw);
@@ -113,7 +112,7 @@ h1 {
 }
 
 /* ===========================
-   Rodapé
+   Footer
    =========================== */
 footer {
   background-color: var(--primary);
