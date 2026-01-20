@@ -1,0 +1,19 @@
+.hero img {
+    width: 100%;
+    height: auto;
+    /* mantém proporção */
+}
+
+/* Alternativa com object-fit */
+.hero {
+    width: 100%;
+    height: 400px;
+    /* exemplo de container fixo */
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* mantém foco do corte */
+}
