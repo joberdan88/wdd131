@@ -102,6 +102,23 @@ figcaption {
     color: #555;
 }
 
+/* ===== Responsive Menu ===== */
+@media (max-width: 768px) {
+    #navMenu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        z-index: 1000;
+    }
+
+    #navMenu.open {
+        display: flex;
+    }
+}
+
 /* ===== Footer ===== */
 footer {
     background-color: #333;
