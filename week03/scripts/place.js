@@ -1,25 +1,21 @@
-// Footer info
+// Footer: current year and last modified
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
-// Weather values (estáticos)
+// Wind Chill Calculation (Celsius version)
+function calculateWindChill(tempC, windKmh) {
+    return 13.12 + 0.6215 * tempC - 11.37 * Math.pow(windKmh, 0.16) + 0.3965 * tempC * Math.pow(windKmh, 0.16);
+}
+
+// Get static values from HTML
 const temp = parseFloat(document.getElementById("temp").textContent);
 const wind = parseFloat(document.getElementById("wind").textContent);
 
-// Função de cálculo (em °C)
-function calculateWindChill(t, v) {
-    return (
-        13.12 +
-        0.6215 * t -
-        11.37 * Math.pow(v, 0.16) +
-        0.3965 * t * Math.pow(v, 0.16)
-    ).toFixed(1);
-}
+let windchillValue = "N/A";
 
-
-let windChillValue = "N/A";
+// Conditions for valid wind chill calculation
 if (temp <= 10 && wind > 4.8) {
-    windChillValue = calculateWindChill(temp, wind);
+    windchillValue = calculateWindChill(temp, wind).toFixed(1) + " °C";
 }
 
-document.getElementById("windChill").textContent = windChillValue;
+document.getElementById("windchill").textContent = windchillValue;
