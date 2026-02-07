@@ -74,3 +74,21 @@ footer {
     margin-top: 40px;
     font-size: 14px;
 }
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    input,
+    select,
+    textarea {
+        max-width: 100%;
+    }
+}
