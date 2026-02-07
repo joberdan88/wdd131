@@ -1,0 +1,76 @@
+/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    /* Gradient background from dark blue to orange */
+    background: linear-gradient(to right, #1A237E, #FF9800);
+    color: #fff;
+    /* White text for contrast on gradient */
+}
+
+/* Form container styles */
+form {
+    background: rgba(255, 255, 255, 0.9);
+    /* Semi-transparent white background */
+    color: #000;
+    /* Black text inside the form for readability */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+    /* Center the form horizontally */
+}
+
+/* Labels and legends */
+label,
+legend {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Inputs, selects, and textarea */
+input,
+select,
+textarea {
+    margin-top: 5px;
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    /* Light gray border */
+    border-radius: 4px;
+}
+
+/* Submit button styles */
+input[type="submit"] {
+    margin-top: 20px;
+    background-color: #1A237E;
+    /* Dark blue background */
+    color: #fff;
+    /* White text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: #FF9800;
+    /* Orange background on hover */
+}
+
+/* Header and footer styles */
+header,
+footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+}
