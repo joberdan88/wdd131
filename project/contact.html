@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Jonas Oberdan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Contact</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+            <button id="themeToggle">Toggle Theme</button>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Get in Touch</h2>
+        <p>If you would like to collaborate or learn more about my work, please fill out the form below.</p>
+        <form id="contactForm">
+            <fieldset>
+                <legend>Contact Me</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+
+                <input type="submit" value="Send">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Jonas Oberdan |
+            <a href="references.html">References</a>
+        </p>
+    </footer>
+</body>
+
+</html>
